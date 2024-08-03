@@ -3,11 +3,11 @@ package ru.netology.javaqa.javaqamvn.services;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class calculatorservicetest {
+class CalculatorServiceTest {
 
     @Test
-    public void test1 () {
-        calculatorservice service =  new calculatorservice();
+    public void test1() {
+        CalculatorService service = new CalculatorService();
 
         int actual = service.calculate(10_000, 3_000, 20_000);
         int expected = 3;
@@ -16,8 +16,8 @@ class calculatorservicetest {
     }
 
     @Test
-    public void test2 () {
-        calculatorservice service =  new calculatorservice();
+    public void test2() {
+        CalculatorService service = new CalculatorService();
 
         int actual = service.calculate(100_000, 60_000, 150_000);
         int expected = 2;
