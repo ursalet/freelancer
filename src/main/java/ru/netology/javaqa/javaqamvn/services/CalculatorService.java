@@ -6,9 +6,9 @@ public class CalculatorService {
         int money = 0; // количество денег на счету
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) {// можем ли отдыхать?
+                money -= expenses;
                 money /= 3;
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = money - expenses;
             } else {
                 money = money + income;
                 money -= expenses;
